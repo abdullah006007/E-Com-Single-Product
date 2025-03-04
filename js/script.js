@@ -17,7 +17,7 @@ for (let ringButton of ringButtons) {
     const color = event.target.id.replace("-color", "");
 
     let productImg = document.getElementById("product-image");
-    productImg.src = "../images/" + color + ".png";
+    productImg.src = "./images/" + color + ".png";
   });
 }
 
@@ -96,7 +96,7 @@ document.getElementById("add-to-cart").addEventListener("click", function () {
       .innerText.split("$")[1];
 
     cartItems.push({
-      Image: "../images/" + selectedColor + ".png",
+      Image: "./images/" + selectedColor + ".png",
       title: "Modern Smart watch",
       color: selectedColor,
       size: selectedSize,
